@@ -581,21 +581,27 @@ background-color: #fff;
   line-height: 1.5;
 }
 
-.social-icons {
-  margin: 20px 0;
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 
-.social-icons a {
-  margin: 0 10px;
-  font-size: 20px;
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s;
+.partner-logos img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-.social-icons a:hover {
-  color: orange;
+.partner-logos img:hover {
+  transform: scale(1.1);
 }
+
+
 
 hr {
   margin: 30px auto;
