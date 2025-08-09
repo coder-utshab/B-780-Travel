@@ -23,6 +23,7 @@ header {
   align-items: center;
   padding: 20px 60px;
   background: #fff;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -50,6 +51,9 @@ nav a {
 .hero {
   position: relative;
   text-align: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 100px auto;
 }
 
 .hero-img {
