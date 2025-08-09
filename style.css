@@ -35,7 +35,7 @@ nav a {
   color: #444;
 }
 
-/* HERO SECTION */
+/* HERO SECTION - Fixed image sizing */
 .hero {
   position: relative;
   text-align: center;
@@ -46,9 +46,12 @@ nav a {
 
 .hero-img {
   width: 100%;
-  max-width: 500px;
+  max-width: 80px; /* Reduced maximum size */
+  height: auto; /* Maintain aspect ratio */
   object-fit: cover;
   border-radius: 10px;
+  margin: 0 auto; /* Center the image */
+  display: block;
 }
 
 .hero-text {
@@ -95,7 +98,7 @@ nav a {
   cursor: pointer;
 }
 
-/* POPULAR TOURS SECTION */
+/* POPULAR TOURS SECTION - Fixed photo sizing */
 .parull {
   display: flex;
   justify-content: center;
@@ -144,10 +147,13 @@ nav a {
   background-color: darkorange;
 }
 
-.photho img {
+.photho img { /* Corrected class name from photh0 */
   width: 100%;
+  max-width: 600px; /* Reduced maximum size */
   height: auto;
   border-radius: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
 /* DESTINATION SECTION */
@@ -597,14 +603,12 @@ hr {
 
 /* ========== RESPONSIVE DESIGN ========== */
 @media (max-width: 1200px) {
-  /* Tablet and small desktop adjustments */
-  .hero-text {
-    transform: translateX(-50%);
-    width: 90%;
+  .hero-img {
+    max-width: 700px;
   }
   
-  .overlay-box {
-    width: 300px;
+  .photho img {
+    max-width: 500px;
   }
   
   .image-box img,
@@ -614,7 +618,6 @@ hr {
 }
 
 @media (max-width: 992px) {
-  /* Tablet adjustments */
   header {
     padding: 15px 30px;
   }
@@ -671,7 +674,6 @@ hr {
 }
 
 @media (max-width: 768px) {
-  /* Large mobile adjustments */
   .hero h1 {
     font-size: 24px;
   }
@@ -715,7 +717,6 @@ hr {
 }
 
 @media (max-width: 576px) {
-  /* Small mobile adjustments */
   header {
     flex-direction: column;
     gap: 15px;
@@ -765,7 +766,6 @@ hr {
 }
 
 @media (max-width: 400px) {
-  /* Extra small devices */
   .hero h1 {
     font-size: 20px;
   }
