@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +11,12 @@ body {
   background: #f0f0f0;
 }
 
-/* HEADER SECTION */
+
+
+
+
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -35,7 +42,12 @@ nav a {
   color: #444;
 }
 
-/* HERO SECTION */
+
+
+
+
+
+
 .hero {
   position: relative;
   text-align: center;
@@ -95,7 +107,12 @@ nav a {
   cursor: pointer;
 }
 
-/* POPULAR TOURS SECTION */
+
+
+
+
+
+
 .parull {
   display: flex;
   justify-content: center;
@@ -150,7 +167,14 @@ nav a {
   border-radius: 10px;
 }
 
-/* DESTINATION SECTION */
+
+
+
+
+
+
+
+
 .destination-section {
   max-width: 1200px;
   margin: 80px auto;
@@ -212,7 +236,14 @@ nav a {
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
 }
 
-/* FEATURES SECTION */
+
+
+
+
+
+
+
+
 .features-section {
   max-width: 1200px;
   padding: 0 20px;
@@ -283,7 +314,14 @@ nav a {
   justify-self: center;
 }
 
-/* DEALS SECTION */
+
+
+
+
+
+
+
+
 .deals-section {
   max-width: 1200px;
   margin: 80px auto;
@@ -380,7 +418,14 @@ nav a {
   font-size: 16px;
 }
 
-/* IMAGE SECTION */
+
+
+
+
+
+
+
+
 .image-section {
   max-width: 1200px;
   margin: 80px auto;
@@ -445,7 +490,14 @@ nav a {
   text-shadow: 1px 1px 5px black;
 }
 
-/* NEWSLETTER SECTION */
+
+
+
+
+
+
+
+
 .newsletter-section {
   max-width: 1200px;
   margin: 80px auto;
@@ -521,7 +573,14 @@ nav a {
   text-align: center;
 }
 
-/* FOOTER SECTION */
+
+
+
+
+
+
+
+
 .main-footer {
   background-color: #aaa6a6;
   max-width: 1200px;
@@ -595,199 +654,77 @@ hr {
   margin-bottom: 20px;
 }
 
-/* ========== RESPONSIVE DESIGN ========== */
-@media (max-width: 1200px) {
-  /* Tablet and small desktop adjustments */
-  .hero-text {
-    transform: translateX(-50%);
-    width: 90%;
-  }
-  
-  .overlay-box {
-    width: 300px;
-  }
-  
-  .image-box img,
-  .promo-box img {
-    width: 400px;
-  }
-}
+
+
+
+
+
+
+/*  RESPONSIVE DESIGN  */
+
 
 @media (max-width: 992px) {
-  /* Tablet adjustments */
-  header {
-    padding: 15px 30px;
-  }
-  
-  .hero {
-    margin: 50px auto;
-  }
-  
-  .hero-text {
-    position: static;
-    transform: none;
-    margin-top: 20px;
-    color: #333;
-  }
-  
-  .hero h1 {
-    color: #222;
-  }
-  
-  .parull,
-  .destination-section,
-  .features-section,
-  .deals-section,
-  .image-section,
-  .newsletter-section,
-  .main-footer {
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-  
   .cards {
     grid-template-columns: 1fr;
-    gap: 20px;
   }
-  
-  .center-box {
-    grid-column: auto;
+
+  .image-box img,
+  .promo-box img {
+    width: 100%;
   }
-  
+
   .overlay-box {
     width: 90%;
     left: 5%;
     right: 5%;
   }
-  
-  .image-content,
-  .newsletter-content {
-    justify-content: center;
-  }
-  
-  .text-box {
-    margin-bottom: 30px;
-  }
-}
 
-@media (max-width: 768px) {
-  /* Large mobile adjustments */
-  .hero h1 {
-    font-size: 24px;
-  }
-  
-  .hero p {
-    font-size: 16px;
-  }
-  
-  .search {
+  .footer-logo {
     flex-direction: column;
-    align-items: center;
-  }
-  
-  .search input,
-  .search select,
-  .search button {
-    width: 100%;
-    max-width: 300px;
-  }
-  
-  .university,
-  .text-box,
-  .form-box {
-    min-width: 100%;
-  }
-  
-  .deal-card {
-    height: 300px;
-  }
-  
-  .image-box img,
-  .promo-box img {
-    width: 100%;
-  }
-  
-  .discount-tag {
-    bottom: 15px;
-    right: 15px;
-    padding: 8px 12px;
   }
 }
 
 @media (max-width: 576px) {
-  /* Small mobile adjustments */
   header {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     padding: 15px 20px;
   }
-  
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+
+  .hero h1 {
+    font-size: 24px;
   }
-  
-  nav a {
-    margin: 0;
+
+  .search {
+    flex-direction: column;
   }
-  
-  .hero {
-    padding: 20px 10px;
-  }
-  
-  .parull {
-    gap: 30px;
-    padding: 20px;
-  }
-  
-  .destination-grid {
+
+  .cards {
     grid-template-columns: 1fr;
   }
-  
-  .deals-section {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-  
-  .overlay-box {
-    padding: 15px;
-  }
-  
-  .main-footer {
-    padding: 50px 20px;
-  }
-  
-  .partner-logos {
-    flex-wrap: wrap;
-  }
-}
 
-@media (max-width: 400px) {
-  /* Extra small devices */
-  .hero h1 {
-    font-size: 20px;
+  .overlay-box {
+    width: 90%;
+    left: 5%;
+    right: 5%;
   }
-  
-  .hero p {
-    font-size: 14px;
-  }
-  
-  .university h2,
-  .destination-section h2,
-  .joyonto h2,
-  .deals-section h2,
+
   .text-box h2 {
     font-size: 22px;
   }
-  
-  .card {
-    padding: 15px;
-    min-height: auto;
+
+  .image-box img,
+  .promo-box img {
+    width: 100%;
   }
-  
+
   .form-box {
-    padding: 20px;
+    padding: 16px;
+  }
+
+  .footer-logo {
+    flex-direction: column;
   }
 }
+
+
